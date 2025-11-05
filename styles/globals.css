@@ -10,6 +10,7 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -20,6 +21,13 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
+  font-size: inherit;
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 ul {
@@ -39,4 +47,15 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
