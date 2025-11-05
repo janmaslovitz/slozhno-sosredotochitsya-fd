@@ -157,6 +157,7 @@
   color: var(--subtitle-color);
   margin-block-end: var(--aux-gap);
   font-weight: bold;
+  line-height: 23.4px;
 }
 
 .textblock-concentration {
