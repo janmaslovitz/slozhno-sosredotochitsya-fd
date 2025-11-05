@@ -158,6 +158,7 @@
   margin-block-end: var(--aux-gap);
   font-weight: bold;
   line-height: 23.4px;
+  inline-size: 100%;
 }
 
 .textblock-concentration {
