@@ -5,7 +5,6 @@
   padding-inline: var(--main-gap);
   background-image: var(--cover-image);
   background-attachment: fixed;
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   font-family: "IBM Plex Mono", sans-serif;
