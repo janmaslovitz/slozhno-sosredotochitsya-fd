@@ -124,6 +124,7 @@
   text-shadow: 4px 4px 0 var(--title-color);
   line-height: 82.5%;
   align-self: center;
+  font-weight: bold;
 }
 
 .header__paragraph {
@@ -144,6 +145,7 @@
 .textblock__title {
   color: var(--title-color);
   line-height: 23.4px;
+  font-weight: bold;
 }
 
 .textblock__list__item {
@@ -154,6 +156,7 @@
 .textblock__subtitle {
   color: var(--subtitle-color);
   margin-block-end: var(--aux-gap);
+  font-weight: bold;
 }
 
 .textblock-concentration {
@@ -216,6 +219,7 @@
   color: var(--text-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   text-shadow: 2px 2px 0 var(--accent-color);
+  font-weight: bold;
   line-height: 82.5%;
 }
 

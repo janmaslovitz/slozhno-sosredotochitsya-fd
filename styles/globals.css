@@ -6,27 +6,33 @@
   box-sizing: border-box;
 }
 
-body {
-  min-inline-size: 375px;
-  max-inline-size: 1440px;
-  margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-}
 
+body,
 h1,
 h2,
 h3,
 h4,
-h5,
-h6,
-p {
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
   margin: 0;
   padding: 0;
-  font-size: inherit;
-  overflow-wrap: break-word;
+  font-size: 100%;
+	font: inherit;
+}
+
+body {
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 p {
