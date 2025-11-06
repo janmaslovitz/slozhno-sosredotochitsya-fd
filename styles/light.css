@@ -6,6 +6,7 @@
 
 :root.theme-light {
   --cover-image: url("../images/cover-image-light.png");
+  --bg-image: #fff1f7;
   --accent-color: #ff8dcb;
   --accent-color-alpha: #35343066;
   --text-color: #ffc2e6;
@@ -21,6 +22,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --cover-image: url("../images/cover-image-light.png");
+    --bg-image: #fff1f7;
     --accent-color: #ff8dcb;
     --accent-color-alpha: #35343066;
     --text-color: #ffc2e6;
@@ -29,7 +31,7 @@
     --subtitle-color: #353430;
   }
 
-.theme-auto .record-icon {
+  .theme-auto .record-icon {
     display: none;
   }
 }
