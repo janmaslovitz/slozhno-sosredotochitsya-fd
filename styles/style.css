@@ -152,11 +152,11 @@
 .text-block__list-item {
   display: flex;
   flex-direction: column;
+  gap: var(--main-gap);
 }
 
 .text-block__subtitle {
   color: var(--subtitle-color);
-  margin-block-end: var(--aux-gap);
   font-weight: bold;
   line-height: 23.4px;
   inline-size: 100%;
@@ -165,6 +165,12 @@
 .text-block-concentration {
   margin-block-start: calc(var(--main-gap) * 2);
 }
+
+.text-block-concentration__reason-list {
+    display: flex;
+    flex-direction: column;
+    gap:calc(var(--main-gap) * 2);
+  }
 
 .subtitle-concentration {
   font-weight: normal;
@@ -193,6 +199,13 @@
 .text-block__text-link:focus-visible {
   outline: 1px solid var(--main-text-color);
 }
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: var(--main-gap);
+}
+
 .gallery__container {
   display: grid;
   grid-template-columns: 1fr;
@@ -230,7 +243,18 @@
   background-color: var(--accent-color);
   background-origin: content-box;
 }
+/* ddd
 
+
+
+
+
+
+
+
+
+
+ddd */
 @media (width >= 768px) {
   :root {
     --main-gap: 20px;
@@ -263,13 +287,17 @@
 
   .text-block__list-item {
     grid-column: 2 / auto;
+    gap: var(--aux-gap);
   }
 
   .text-block__title {
     max-inline-size: 236px;
   }
-  .text-block-concentration {
-    margin-block-start: var(--main-gap);
+
+  .text-block-concentration__reason-list {
+    gap: var(--main-gap);
+    grid-row: 2 / auto;
+    grid-column: span 2;
   }
 
   .item-concentration {
@@ -281,7 +309,7 @@
   }
 
   .gallery__container {
-    margin-block: var(--main-gap) 60px;
+    margin-block: 0 60px;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--main-gap);
   }
@@ -314,10 +342,24 @@
   .footer__title {
     font-size: var(--title-font-size);
   }
-}
 
+  .footer {
+    margin-block-start: 0;
+  }
+}
+/* ddd
+
+
+
+
+
+
+
+
+
+
+ddd */
 @media (width >= 1024px) {
-  
   :root {
     --desktop-align: ;
   }
@@ -352,7 +394,6 @@
     gap: 0;
     grid-template-columns: repeat(auto-fit, 315px);
     justify-content: space-between;
-
   }
   .item-concentration {
     grid-column: auto;
